@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(25, 25, 154);
+}
+
+section{
+    height: 100vh;
+}
+.puntaje{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+.puntaje h2{
+    font-size: 25px;
+}
+.puntaje p{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.tablero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tablero button{
+    width: 100px;
+    height: 100px;
+    border-style: 0px transparent black;
+    border-width: 4px;
+    border-radius: 50%;
+}
+.opciones button{
+    cursor: pointer;
+}
