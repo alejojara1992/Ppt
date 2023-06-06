@@ -5,6 +5,10 @@
     font-family: 'Press Start 2P', cursive;
     color: rgb(25, 25, 154);
 }
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
 
 section{
     height: 100vh;
@@ -13,6 +17,7 @@ section{
     height: 20vh;
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 .puntaje h2{
     font-size: 25px;
@@ -27,6 +32,7 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 .tablero button{
     width: 100px;
@@ -35,6 +41,57 @@ section{
     border-width: 4px;
     border-radius: 50%;
 }
+.opciones img{
+    height: 50px;
+}
+
 .opciones button{
     cursor: pointer;
+}
+.resultado{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+.manos img button{
+    width: 150px;
+}
+.manos{
+    
+    animation: movimiento 2s ease;
+}
+@keyframes movimiento{
+    0% {
+        transform: translateY(0px);
+      }
+    25%{
+        transform: translateY(-25px);
+    }
+    35%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    65%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-25px);
+    }
+}
+.manos,.opciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
 }

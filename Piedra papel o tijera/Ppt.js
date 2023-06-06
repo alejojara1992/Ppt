@@ -1,1 +1,0 @@
-let playerscore = 0;
